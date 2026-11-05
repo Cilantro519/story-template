@@ -1,0 +1,23 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #222222;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.byline {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.figure-caption {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
