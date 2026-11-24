@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Article Title | Story Template</title>
+  <title>How Fights End Across the UFC | Data Visualization</title>
 
   <!-- Bootstrap 4 CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -14,7 +14,7 @@
 
   <!-- Bootstrap Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Publication Name</a>
+    <a class="navbar-brand" href="#">UFC Data Viz</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -22,108 +22,94 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#graphic-1">By Division <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="#graphic-2">Annual Trends</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#graphic-3">Global Origins</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <!-- OPTIONAL: Hero Image Header Section -->
-  <header class="hero-image bg-light py-5 mb-4 text-center">
-    <div class="container">
-      <img src="https://via.placeholder.com/1200x500" class="img-fluid rounded" alt="Hero banner image">
-    </div>
-  </header>
-
   <!-- Main Container -->
-  <main class="container my-4">
+  <main class="container my-5">
 
     <!-- Headline and Byline -->
     <header class="story-header mb-4 text-center">
-      <h1 class="display-4 font-weight-bold">Main Story Headline Goes Here</h1>
-      <p class="byline text-muted mt-2">By <strong>Author Name</strong> | Published Nov. 5, 2026</p>
+      <h1 class="display-4 font-weight-bold">How Fights End Across the UFC</h1>
+      <p class="lead text-muted mt-2">
+        Examining knockout share by weight division, year-to-year stoppage swings, and where UFC fighters come from.
+      </p>
+      <p class="byline text-muted mt-2">By <strong>Xavier J. Serrano</strong> | Published Nov. 24, 2026</p>
     </header>
 
     <hr class="my-4">
 
-    <!-- Primary Article Content / Chapter -->
+    <!-- Primary Article Content -->
     <article class="row justify-content-center">
       <div class="col-lg-8">
-        
-        <!-- Chapter Section -->
-        <section class="chapter mb-5">
-          <h2 class="h3 font-weight-bold mb-3">Chapter 1: The Beginning of the Story</h2>
-          
-          <p class="lead">
-            This is the opening lead paragraph of your story template. It establishes the main hook and context for the rest of the piece using Bootstrap typography classes.
+
+        <!-- Graphic 1: KO/TKO Finish Share by Weight Class -->
+        <section id="graphic-1" class="chapter mb-5 pb-4 border-bottom">
+          <h2 class="h3 font-weight-bold mb-2">KO/TKO Finish Share Drops Across Lighter UFC Weight Classes</h2>
+          <p class="text-secondary mb-3">
+            Heavyweight leads all UFC divisions in knockout and TKO finishes (52.07%), while lighter men's divisions and women's weight classes see a smaller share of strike stoppages, down to 13.92% at Women's Strawweight.
           </p>
 
-          <p>
-            Paragraph text goes here. Expand your story with detailed reporting, context, and background details. Bootstrap’s grid system keeps the line length comfortable for longform reading.
+          <div class="my-3">
+            <iframe title="KO/TKO Finish Share Drops Across Lighter UFC Weight Classes" aria-label="Bar Chart" id="datawrapper-chart-hbPCy" src="https://datawrapper.dwcdn.net/hbPCy/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="352" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener("message",function(e){if(e.data["datawrapper-height"]!==void 0){var t=document.querySelectorAll("iframe");for(var n in e.data["datawrapper-height"])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data["datawrapper-height"][n]+"px";i.style.height=a}}})}e()})();</script>
+          </div>
+
+          <p class="small text-muted mb-0">
+            <strong>Source:</strong> <a href="https://fightomic.com/ufc-finish-rates-by-weight-class/" target="_blank" rel="noopener noreferrer">Fightomic</a> (UFC finish rates by weight class).
+          </p>
+        </section>
+
+        <!-- Graphic 2: Annual Stoppage Trend (2022–2026) -->
+        <section id="graphic-2" class="chapter mb-5 pb-4 border-bottom">
+          <h2 class="h3 font-weight-bold mb-2">Finish Rate Hits A 5-Year High Following 2024 Low Finish Rates</h2>
+          <p class="text-secondary mb-3">
+            After dipping in 2024, the share of UFC bouts ending by stoppage rebounded in 2025 and reached a five-year high in 2026, showing how finish frequency shifts from year to year.
           </p>
 
-          <!-- Photo with Caption -->
-          <figure class="figure my-4 text-center w-100">
-            <img src="https://via.placeholder.com/800x450" class="figure-img img-fluid rounded" alt="Descriptive alt text for the main story photo">
-            <figcaption class="figure-caption text-center">
-              A detailed photo caption describing the event or action shown in the image. (Photo Credit / Source)
-            </figcaption>
-          </figure>
+          <div class="my-3">
+            <iframe title="Finish Rate Hits A 5 Year High Following 2024 Low Finish Rates" aria-label="Column Chart" id="datawrapper-chart-xmKc1" src="https://datawrapper.dwcdn.net/xmKc1/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="476" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener("message",function(e){if(e.data["datawrapper-height"]!==void 0){var t=document.querySelectorAll("iframe");for(var n in e.data["datawrapper-height"])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data["datawrapper-height"][n]+"px";i.style.height=a}}})}e()})();</script>
+          </div>
 
-          <p>
-            Additional story text continues here after the figure element. You can add as many paragraphs or sub-chapters as required by your story structure.
+          <p class="small text-muted mb-0">
+            <strong>Source:</strong> <a href="https://fightomic.com/ufc-finish-rates-by-weight-class/" target="_blank" rel="noopener noreferrer">Fightomic</a> (UFC annual stoppage rate trends, 2022–2026).
+          </p>
+        </section>
+
+        <!-- Graphic 3: Fighter Birth Countries Map -->
+        <section id="graphic-3" class="chapter mb-4">
+          <h2 class="h3 font-weight-bold mb-2">Where UFC Fighters Are Born Across The Globe</h2>
+          <p class="text-secondary mb-3">
+            Mapping UFC fighter birthplaces highlights how roster talent clusters in hubs like the United States (1,776) and Brazil (407) alongside international pipelines across Europe, Asia, Oceania, and the Americas.
+          </p>
+
+          <div class="my-3">
+            <iframe title="Where UFC Fighters Are Born Across The Globe" aria-label="Choropleth map" id="datawrapper-chart-vfFMU" src="https://datawrapper.dwcdn.net/vfFMU/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="352" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener("message",function(e){if(e.data["datawrapper-height"]!==void 0){var t=document.querySelectorAll("iframe");for(var n in e.data["datawrapper-height"])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data["datawrapper-height"][n]+"px";i.style.height=a}}})}e()})();</script>
+          </div>
+
+          <p class="small text-muted mb-0">
+            <strong>Source:</strong> <a href="https://ufc.wolfie.gg/explore" target="_blank" rel="noopener noreferrer">MMA Fighter Pokedex</a> (UFC fighter birthplace counts).
           </p>
         </section>
 
       </div>
     </article>
 
-    <!-- OPTIONAL: Three Column Row Section -->
-    <section class="three-column-section my-5 pt-4 border-top">
-      <h3 class="text-center mb-4">Related Insights & Highlights</h3>
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4 class="card-title h5">Column One</h4>
-              <p class="card-text">Key takeaway, side story, or highlighted detail related to the main article narrative.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4 class="card-title h5">Column Two</h4>
-              <p class="card-text">Key takeaway, side story, or highlighted detail related to the main article narrative.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4 class="card-title h5">Column Three</h4>
-              <p class="card-text">Key takeaway, side story, or highlighted detail related to the main article narrative.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <!-- Footer -->
   <footer class="bg-dark text-white py-4 mt-5">
     <div class="container text-center">
-      <p class="mb-1">&copy; 2026 Publication Name. All rights reserved.</p>
-      <small class="text-muted">Designed with Bootstrap 4 for Interactive Design & Development</small>
+      <p class="mb-1">© 2026 Xavier J. Serrano. All rights reserved.</p>
+      <small class="text-muted">Designed with Bootstrap 4 & Datawrapper</small>
     </div>
   </footer>
 
